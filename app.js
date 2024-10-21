@@ -20,7 +20,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 
-
 /*Carpeta estatica*/
 app.use(express.static(__dirname + '/public'))
 
