@@ -15,14 +15,15 @@ const getServicio = async (req, res)=>{
         const servicios = await Servicio.find();
         return res.status(200).json({
                 ok:true,
-                total_servicios: servicios.length,
+                total_results: servicios.length,
                 msg: 'obteniendo todos los servicios',
-                servicios
+                data: servicios
         })
     } catch (error) {
         return res.status(500).json({
                 ok: false,
-                msg: 'Error al obtener los datos, pongase en contacto con el administrador'
+                msg: 'Error al obtener los datos, pongase en contacto con el administrador',
+                data:[]
           })
     }
 }
@@ -135,14 +136,15 @@ const getProducto = async (req, res)=>{
         const productos = await Producto.find();
         return res.status(200).json({
                 ok:true,
-                total_productos: productos.length,
+                total_results: productos.length,
                 msg: 'Obteniendo todos los productos',
-                productos
+                data: productos
         })
     } catch (error) {
         return res.status(500).json({
                 ok: false,
-                msg: 'Error al obtener los datos, pongase en contacto con el administrador'
+                msg: 'Error al obtener los datos, pongase en contacto con el administrador',
+                data: []
           })
     }
 }

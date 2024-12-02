@@ -31,6 +31,9 @@ connection()
 
 /*Rutas*/
 app.use('/api/v1', require('./routes/apiRouter'))
+app.use('/api/v1/auth', require('./routes/authRouter.js'))
+
+
 //app.use('/api/v2', ()=>{ })
 
 

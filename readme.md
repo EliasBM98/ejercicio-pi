@@ -1,6 +1,6 @@
 # Ejercicio API
 ## 1. Mi aplicación
-Esta aplicación es una API que nos va a permitir hacer consultas haciendo uso de la base de datos de MongoDB ATLAS y de la aplicación Postman.
+Esta aplicación es una API que nos va a permitir hacer consultas haciendo uso de la base de datos de MongoDB.
 
 ## 2. Partes
 ### 2.1 APP.JS
